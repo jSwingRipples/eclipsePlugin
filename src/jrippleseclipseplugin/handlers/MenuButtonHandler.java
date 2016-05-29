@@ -34,7 +34,9 @@ public class MenuButtonHandler extends AbstractHandler {
 		
 		// Launching the JSwingRipples application
 		try {
-			String route = "C:/Users/Cristian/Workspace/JRipplesEclipse/eclipsePlugin/src/jrippleseclipseplugin/handlers/jswingripples.jar";
+
+	        URL location = MenuButtonHandler.class.getProtectionDomain().getCodeSource().getLocation();
+			String route = location.getFile()+"src/jrippleseclipseplugin/handlers/jswingripples.jar";
 			File file = new File(route);
 			URL[] urls = { file.toURI().toURL() };
 			URLClassLoader loader = new URLClassLoader(urls);

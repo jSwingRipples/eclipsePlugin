@@ -3,7 +3,9 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: jRipplesEclipsePlugin;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Require-Bundle: org.eclipse.ui
+Require-Bundle: org.eclipse.ui,
+ com.plugin.eclipseplugin;bundle-version="1.0.0",
+ org.apache.commons.logging;bundle-version="1.1.1"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8,
  JavaSE-1.7,
  JavaSE-1.6

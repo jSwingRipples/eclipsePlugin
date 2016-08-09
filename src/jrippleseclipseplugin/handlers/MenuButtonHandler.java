@@ -2,6 +2,7 @@ package jrippleseclipseplugin.handlers;
 
 import org.eclipse.core.commands.AbstractHandler;
 import org.eclipse.core.commands.ExecutionEvent;
+import org.eclipse.core.commands.ExecutionException;
 import org.incha.ui.JSwingRipplesApplication;
 
 /**
@@ -17,10 +18,10 @@ public class MenuButtonHandler extends AbstractHandler {
 	}
 
 	/**
-	 * the command has been executed, so extract extract the needed information
+	 * the command has been executed, so extract the needed information
 	 * from the application context.
 	 */
-	public Object execute(ExecutionEvent event) {
+	public Object execute(ExecutionEvent event) throws ExecutionException {
 		String[] args = {};
 		JSwingRipplesApplication.main(args);
 		return null;

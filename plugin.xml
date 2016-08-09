@@ -20,7 +20,12 @@
             commandId="jRipplesEclipsePlugin.commands.sampleCommand"
             class="jrippleseclipseplugin.handlers.MenuButtonHandler">
       </handler>
+      <handler
+            commandId="Analize with JRipples"
+            class="jrippleseclipseplugin.handlers.ContextMenuHandler">
+      </handler>
    </extension>
+   
    <extension
          point="org.eclipse.ui.bindings">
       <key
@@ -62,7 +67,7 @@
       <menuContribution
             locationURI="popup:org.eclipse.jdt.ui.PackageExplorer">
             <command
-                  commandId="jRipplesEclipsePlugin.commands.sampleCommand"
+                  commandId="Analize with JRipples"
                   icon="icons/sample.gif"
                   id="jRipplesEclipsePlugin.menus.sampleCommand"
                   mnemonic="S">
@@ -83,7 +88,7 @@
       <menuContribution
             locationURI="popup:org.eclipse.ui.navigator.ProjectExplorer#PopupMenu">
             <command
-                  commandId="jRipplesEclipsePlugin.commands.sampleCommand"
+                  commandId="Analize with JRipples"
                   icon="icons/sample.gif"
                   id="jRipplesEclipsePlugin.menus.sampleCommand"
                   mnemonic="S">

@@ -12,6 +12,7 @@ import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.ui.ISelectionService;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.PlatformUI;
+import org.incha.ui.JSwingRipplesApplication;
 
 /**
  * Our sample handler extends AbstractHandler, an IHandler base class.
@@ -40,7 +41,7 @@ public class ContextMenuHandler extends AbstractHandler {
 		String path = project.getLocation().toPortableString();
 		
 		String[] args = {path};
-		System.out.println(args[0]);
+		JSwingRipplesApplication.main(args);
 		return null;
 	}
 
